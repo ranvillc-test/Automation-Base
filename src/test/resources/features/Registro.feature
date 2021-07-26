@@ -2,7 +2,7 @@
 #27/01/2020
 #Jhonatan Medina Blanco
 
-@curso1
+@curso
 Feature: envio correo Text box
 Scenario Outline: envio correo 
 	Given abrir el navegador
@@ -12,9 +12,4 @@ Scenario Outline: envio correo
 	Examples:
 	|nombre|correo|
 	|Rafael|ranvillc@gmail.com|	
-	
-@curso
-Scenario: carga
-		Given abrir el navegador
-		And llegar a cargar
 	

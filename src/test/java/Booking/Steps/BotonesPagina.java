@@ -26,6 +26,9 @@ public class BotonesPagina {
 	@FindBy(how = How.XPATH, using = "//li[@id = 'item-7']")
 	private WebElement btnDowload;
 	
+	@FindBy(how = How.ID, using = "item-3")
+	private WebElement btnTable;
+	
 
 	public BotonesPagina(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -81,6 +84,11 @@ public class BotonesPagina {
 	public void btnDowload() {
 		questions.tiempoSegundos(1);
 		btnDowload.click();
+	}
+	
+	@Step
+	public void btnTable() {
+		btnTable.click();
 	}
 
 
